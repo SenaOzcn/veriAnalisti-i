@@ -14,7 +14,7 @@ while True:
   try:
     a = int(input("Enter the first number: "))
     b = int(input("Enter the second number: "))
-    operation = input("Selecet your operation(+,-,*,/): ")
+    operation = input("Select your operation(+,-,*,/): ")
     print(calculate(a,b,operation))
   except:
     print("Please enter the number!")
