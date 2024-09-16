@@ -30,3 +30,41 @@ newDataFrame
 ## Atlas	2.046861	0.138559	-0.089185
 ## Mehmet	0.378610	-1.382907	0.139203
 
+newDataFrame["Age"]
+## Atıl      0.281287
+## Zeynep   -0.257199
+## Atlas     0.138559
+## Mehmet   -1.382907
+## Name: Age, dtype: float64
+
+newDataFrame["Working Hours"]
+## Atıl      0.947364
+## Zeynep    1.156879
+## Atlas    -0.089185
+## Mehmet    0.139203
+## Name: Working Hours, dtype: float64
+
+newDataFrame[["Salary", "Age"]]
+## 	         Salary	          Age
+## Atıl	        0.464844	0.281287
+## Zeynep	1.126790	-0.257199
+## Atlas	2.046861	0.138559
+## Mehmet	0.378610	-1.382907
+
+newDataFrame.loc["Atıl"]
+## Salary           0.464844
+## Age              0.281287
+## Working Hours    0.947364
+## Name: Atıl, dtype: float64
+
+newDataFrame.loc["Zeynep"]
+## Salary           1.126790
+## Age             -0.257199
+## Working Hours    1.156879
+## Name: Zeynep, dtype: float64
+
+newDataFrame.iloc[1]
+## Salary           1.126790
+## Age             -0.257199
+## Working Hours    1.156879
+## Name: Zeynep, dtype: float64
